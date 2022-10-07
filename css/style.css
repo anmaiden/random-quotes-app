@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&display=swap');
+body{
+  font-family: 'Ruda', sans-serif;
+  background-color: rgb(216, 216, 216);
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  text-align: center;
+}
+.changeTheme{
+  display: flex;
+  background-color: black;
+  opacity: .8;
+  align-items: center;
+  margin-bottom: 70px;
+  border-radius: 50%;
+  color: aliceblue;
+}
+.theme{
+  background-image: url('../img/sun.svg');
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.theme:hover{
+  cursor: pointer;
+}
+.theme.active{
+  background-image: url('../img/moon.svg');
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.theme.active:hover{
+  cursor: pointer;
+}
+.main{
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 89vh;
+}
+.quotes_wrapper{
+  background-color: rgb(27, 22, 15);
+  border-radius: 20px;
+  color: aquamarine;
+  opacity: .7;
+  align-items: center;
+  min-width: 700px;
+  min-height: 300px;
+}
+.quotes_wrapper.white{
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  color: black;
+  opacity: .7;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+}
+.quote_text{
+  max-width: 600px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.author{
+  font-size: 20px;
+  font-style: italic;
+  text-align: right;
+}
+.wrapper-main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.img-main{
+  max-width: 700px;
+}
+.btn.whiteBtn{
+  background-color: rgb(230, 229, 248);
+  border:cadetblue 2px solid;
+  border-radius: 5px;
+  font-size: 20px;
+  color: cadetblue;
+  margin-top: 10px;
+  min-height: 40px;
+  min-width: 200px;
+}
+.btn.whiteBtn:hover{
+  background-color: whitesmoke;
+  transition-duration: .5s;
+}
+.btn{
+  background-color: cadetblue;
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 10px;
+  min-height: 40px;
+  min-width: 200px;
+}
+.btn:hover{
+  background-color: rgb(20, 100, 100);
+  cursor: pointer;
+  transition-duration: .5s;
+}
+.loading{
+  background-color: rgb(60, 79, 80);
+}
+footer{
+   background-color: rgb(27, 22, 15);
+  color: aliceblue;
+  padding: 0 20px;
+  opacity: .6;
+  border-radius: 40px;
+  align-items: center;
+  font-size: 24px;
+}
+.footer_inner{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info{
+  max-width: 150px;
+  max-height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.footer-info p{
+  padding-left: 20px;
+  font-weight: bold;
+}
+.footer-info a{
+  color:#05411c;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.footer-info a:hover{
+  filter: invert(40%) sepia(15%) saturate(638%) hue-rotate(98deg) brightness(92%)
+    contrast(87%);
+  transition-duration: .5s;
+}
+.git-img{
+  filter: invert(47%) sepia(15%) saturate(638%) hue-rotate(98deg) brightness(92%)
+    contrast(87%);
+}
+.logo-rss{
+  filter: invert(50%) sepia(15%) saturate(638%) hue-rotate(98deg) brightness(92%)
+    contrast(87%);
+  margin-top: 10px;
+  background-image: url('../img/logo.svg');
+  background-repeat: no-repeat;
+  min-width: 160px;
+}
+.logo-rss:hover{
+    transform: rotate(1deg);
+    transition-duration: .5s;
+}
